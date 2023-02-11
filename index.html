@@ -10,214 +10,9 @@
   <title>Portfolio</title>
 
   <link rel="stylesheet" href="style.css">
-  
-  <style type="text/css">
-  
-  *{
-  margin: 0;
-  padding: 0;
-  font-family: 'Poppins', sans-serif;
-  box-sizing: border-box;
-  }
-  
-  body{
-  background: #080808;
-  color: #fff;
-  }
-  
-  #header{
-  width: 100%;
-  height: 100vh;
-  background-image: url(background.png);
-  background-position: center;
-  background-size:cover;
-  }
-  
-  .container{
-  padding: 10px 10%;
-  }
-  
-  nav{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  }
-  
-  .logo{
-  width: 140px;
-  }
-  
-  nav ul li{
-  display: inline-block;
-  lift-style: none;
-  margin: 10px 20px;
-  }
-  
-  nav ul li a{
-  color: #fff;
-  text-decoration: none;
-  font-size: 18px;
-  position: relative;
-  }
-  
-  nav ul li a::after{
-  content: '';
-  width: 0;
-  height: 3px;
-  background: #ff004f;
-  position: absolute;
-  left: 0;
-  bottom: -6px;
-  transition: 0.5s;
-  }
-  
-  nav ul li a:hover::after{
-  width: 100%;
-  }
-  
-  .header-text{
-  margin-top: 20%;
-  font-size: 30px;
-  }
-  
-  .header-text h1{
-  font-size: 60px;
-  margin-top: 20px;
-  }
-  
-  .header-text h1 span{
-  color: #ff004f;
-  }
-  
-  /* ----------about---------- */
-  
-  #about{
-  padding: 80px 0;
-  color: #ababab;
-  }
-  
-  .row{
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  }
-  
-  .about-col-1{
-  flex-basis: 35px;
-  }
-  
-  .about-col-1 img{
-  width: 100px;
-  border-radius: 15px;
-  }
-  
-  .about-col-2{
-  flex-basis: 60%;
-  }
-  
-  .sub-title{
-  font-size: 60px;
-  font-weight: 600;
-  color: #fff;
-  }
-  
-  .tab-titles{
-  display: flex;
-  margin: 20px 0 40px;
-  }
-  
-  .tab-links{
-  margin-right: 50px;
-  font-size: 18px;
-  font-weight: 500;
-  cursor: pointer;
-  position: relative;
-  }
-  
-  .tab-links::after{
-  content: '';
-  width: 0;
-  height: 3px;
-  background: #ff004f;
-  left: 0;
-  bottom: -8px;
-  transition: 0.5s;
-  }
-  
-  .tab-links.active-link::after{
-  width: 50%;
-  }
-  
-  .tab-contents ul li{
-  list-style: none;
-  margin: 10px 0;
-  }
-  
-  .tab-contents ul li span{
-  color: #b54769;
-  font-size: 14px;
-  }
-  
-  .tab-contents{
-  display: none;
-  }
-  
-  .tab-contents.active-tab{
-  display: block;
-  }
-  
-  /* ---------- Services ---------- */
-  
-  #services{
-  padding: 30px 0;
-  }
-  
-  .services-list{
-  display: grid;
-  grid-templates-colums: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 40px;
-  margin-top: 50px;
-  }
-  
-  .services-list div{
-  background: #262626;
-  padding: 40px;
-  font-size: 13px;
-  font-weight: 300;
-  border-radius: 10px; 
-  transition: background 0.5s, transform 0.5s;
-  }
-  
-  .services-list div i{
-  font-size: 50px;
-  margin-bottom: 30px;#
-  }
-  
-  .services-list div h2{
-  font-size: 30px;
-  font-weight: 300;
-  margin-bottom: 15px;
-  }
-  
-  .services-list div a{
-  text-decoration: none;
-  color: white;
-  font-size: 12px;
-  margin-top: 20px;
-  display: inline-block;
-  }
-  
-  .services-list div:hover{
-  background: #ff004f;
-  transform: translateY(-10px);
-  }
-  
-  </style>
-  
-  <link rel="stylesheet" href="https://kit.fontawesome.com/7b4b1613a0.css" crossorigin="anonymous">
+
   <script src="https://kit.fontawesome.com/7b4b1613a0.js" crossorigin="anonymous"></script>
-  
+
 </head>
 
 <body>
@@ -249,7 +44,15 @@
         </div>
         <div class="about-col-2">
           <h1 class="sub-title">About Me</h1>
-          <p>I'm 14 and i like to do coding i'm hoping to study in the field of machine learning or full stack developer/web-developer or mayhe even a app/game developer since i like games i'm currently mastering HTML5, CC3, and JAVASCRIPT I can make functional websites. Hoping to learn more...</p>
+          <p>Hi there! My name is Abdemanaf, and I am a 14-year-old aspiring software developer. I am passionate about coding and constantly strive to expand my knowledge and skills in this field.
+          
+          I have a solid foundation in HTML, CSS, and JavaScript and am eager to add Python to my skill set. I am constantly seeking new challenges and opportunities to grow as a developer, and I believe that my youthful enthusiasm and determination make me a valuable asset to any team.
+          
+          I am a quick learner and am always seeking new knowledge and resources to help me improve. Whether working on personal projects or collaborating with others, I am dedicated to producing high-quality, well-designed code.
+          
+          I am excited about the future of technology and the role that I can play in shaping it. If you're looking for a driven, dedicated, and knowledgeable developer, I would be happy to work with you.
+          
+          Thank you for visiting my portfolio! I hope you enjoy learning about my work and accomplishments.</p>
           
           <div class="tab-titles">
             <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -258,9 +61,9 @@
           </div>
           <div class="tab-contents active-tab" id="skills">
           <ul>
-          <li> <span>UI/UX</span> <br> Designing Web/App interfraces. </li>
-          <li> <span>Web Development</span> <br> Web App Development. </li>
-          <li> <span>App Development</span> <br> Building Android/IOS apps. </li>
+          <li> <span>HTML:</span> <br> Proficient in HTML5, including semantic markup, forms, and multimedia elements. </li>
+          <li> <span>CSS:</span> <br> Skilled in CSS3, including layout, styling, and responsive design. </li>
+          <li> <span>JAVASCRIPT:</span> <br> Experienced in JavaScript, including ES6 syntax, DOM manipulation, and AJAX requests. </li>
           </ul>
           </div>
           <div class="tab-contents" id="experience">
@@ -292,7 +95,7 @@
         <div>
           <i class="fa-solid fa-code"></i>
           <h2>Web Design</h2>
-          <p>Can design for you full website for any topic for anybody anywhwere</p>
+          <p>Can design fully responsive websites on any topic for anyone.</p>
           <a href="#">Learn more</a>
         </div>
         <div>
@@ -304,30 +107,83 @@
         <div>
           <i class="fa-brands fa-app-store"></i>
           <h2>App Design</h2>
-          <p>Can design for you full App for any topic for anybody anywhwere</p>
+          <p>Can design fully functional apps for anyone. </p>
           <a href="#">Learn more</a>
         </div>
       </div>
     </div>
   </div>
 
+<!---------- Portfolio -------- -->
 
-  <script>
-  
-    var tablinks = document.getElementByClassName("tab-links");
-    var tabcontents = document.getElementByClassName("tab-contents");
-    function opentab(tabname){
-      for(tablink of tablinks){
-        tablink.classList.remove("active-link");
-      }
-    for(tabcontent of tabcontents){
-      tabcontent.classList.remove("active-tab");
-      }
-    event.currentTarget.classList.add("active-link");
-    document.getElementById(tabname).classList.add("active-tab");
-    }
-    
-  </script>
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="work-1.png">
+          <div class="layer">
+            <h3>Social Media App</h3>
+            <p>The app connects you to the talented people around the world.
+            Download it from play store.</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+        <img src="work-2.png">
+        <div class="layer">
+          <h3>Music App</h3>
+          <p>The app connects you to the talented people around the world.
+          Download it from play store.</p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+        </div>
+        <div class="work">
+          <img src="work-3.png">
+          <div class="layer">
+            <h3>Ònline Shopping App</h3>
+            <p>The app connects you to the talented people around the world.
+            Download it from play store.</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+  </div>
+
+<!---------- Contact -------- -->
+
+  <div id="contact">
+    <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p> <i class="fa-sharp fa-solid fa-paper-plane"></i> contact@example.com</p>
+            <p> <i class="fa-solid fa-square-phone"></i> 0123456789</p>
+            <div class="social-icons">
+              <a href="http://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+              <a href="my-cv.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="email" placeholder="Your Email" required>
+              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+        <div class="copyright">
+        <p> &copy; ABDEMANAF. BURHANUDDIN </p>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
 
 </body>
 
