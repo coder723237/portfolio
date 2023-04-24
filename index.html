@@ -21,13 +21,15 @@
     <div class="container">
       <nav>
         <img src="logo.png" class="logo">
-        <ul>
+        <ul id="sidemenu">
           <li> <a href="#header">Home</a> </li>
           <li> <a href="#about">About</a> </li>
           <li> <a href="#services">Services</a> </li>
           <li> <a href="#portfolio">Portfolio</a> </li>
           <li> <a href="#contact">Contact</a> </li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
         </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
       </nav>
       <div class="header-text">
          <p>UI/UX Designer</p>
@@ -55,7 +57,8 @@
           Thank you for visiting my portfolio! I hope you enjoy learning about my work and accomplishments.</p>
           
           <div class="tab-titles">
-            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links active-link" onclick="opentab('skills')
+            ">Skills</p>
             <p class="tab-links" onclick="opentab('experience')">Experience</p>
             <p class="tab-links" onclick="opentab('education')">Education</p>
           </div>
@@ -170,20 +173,40 @@
               <a href="my-cv.pdf" download class="btn btn2">Download CV</a>
           </div>
           <div class="contact-right">
-            <form>
+            <form name="submit-to-google-sheet">
               <input type="text" name="Name" placeholder="Your Name" required>
-              <input type="email" name="email" placeholder="Your Email" required>
+              <input type="email" name="Email" placeholder="Your Email" required>
               <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
               <button type="submit" class="btn btn2">Submit</button>
             </form>
+            <span id="msg"></span>
           </div>
         </div>
         <div class="copyright">
-        <p> &copy; ABDEMANAF. BURHANUDDIN </p>
+        <p> Copyright &copy; Abdemanaf. Burhanuddin </p>
     </div>
   </div>
 
   <script src="index.js"></script>
+  
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbztWzgOpcIzR4BWjRcAB3v3rz4VeHVDeNvW5s3iwg-Rja58pICQBl3USulCJdDX7GRn/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          msg.innerHTML = "Message Sent Successfully"
+          setTimeout(function(){
+            msg.innerHTML = ""
+          },5000)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 
 </body>
 
